@@ -1,20 +1,86 @@
 * {
   margin: 0px;
   padding: 0px;
+  box-sizing: border-box;
 }
+
 body {
   font-family: "Outfit", sans-serif;
 }
 
 .main {
-  background-color: #fff8e1;
+  background-color: #fff;
   height: 100vh;
+  box-shadow: 1px 1px 1px gray;
 }
+
 .container {
-  max-width: 100%;
-  width: 1440px;
+  width: 100%;
   margin: 0px auto;
+  max-width: 1066px;
+  box-shadow: 0px 16px 19px #fff2f2;
+
 }
+
+.row {
+  display: flex;
+  /* flex-wrap: wrap; */
+}
+
+.left_sidebar {
+  background-color: #0b1123;
+  padding: 10px;
+  height: 100vh;
+  flex: 0 0 auto;
+  width: 16.66666667%;
+}
+
+.left_sidebar ul {
+  margin: 0px;
+}
+
+.left_sidebar ul li {
+  list-style-type: none;
+  padding: 10px;
+  color: #fff;
+}
+
+.main_content {
+  flex: 0 0 auto;
+  width: 83.33333333%;
+  background-color: #fff;
+  padding: 10px;
+  /* width: 100%; */
+}
+
+.all_task_list {
+
+  height: 70vh;
+
+  width: 100%;
+}
+
+.all_task_list ul {
+  margin: 0px;
+}
+
+.all_task_list ul li {
+  list-style-type: none;
+  padding: 10px;
+  color: #000;
+}
+
+.add_task {
+  position: absolute;
+  /* width: 100%; */
+  bottom: 10px;
+}
+
+.add_task .input_form {
+  display: flex;
+  /* width: 100%; */
+}
+
 .section {
   display: flex;
   justify-content: center;
@@ -27,22 +93,25 @@ body {
   margin-bottom: 10px;
   text-align: center;
 }
-.input-form {
+
+.input_form {
   display: flex;
-  flex-direction: column;
+
   gap: 10px;
 }
-.input-form input[type="text"] {
-  padding: 15px;
+
+.input_form input[type="text"] {
+  padding: 10px;
   max-width: 100%;
-  width: 500px;
+  width: 800px;
   border: 1px solid gray;
   border-radius: 6px;
   font-size: 16px;
   background: white;
   font-family: "Outfit", sans-serif;
 }
-.input-form textarea {
+
+.input_form textarea {
   padding: 15px;
   max-width: 100%;
   width: 500px;
@@ -51,9 +120,10 @@ body {
   border-radius: 6px;
   font-family: "Outfit", sans-serif;
 }
-.input-form input[type="submit"] {
+
+.input_form button {
   padding: 15px;
-  max-width: 100%;
+  /* max-width: 100%; */
   border: 1px solid gray;
   border-radius: 6px;
   background: red;
@@ -67,10 +137,18 @@ body {
   margin-top: 10px;
   width: 100%;
 }
+
 .task-list table tr th {
   border-top: 1px solid gray;
 }
+
 .task-list table tr td {
   border-top: 1px solid gray;
   padding: 10px;
+}
+
+
+.modal {
+  position: absolute;
+
 }

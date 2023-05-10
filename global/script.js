@@ -19,6 +19,5 @@ taskform.addEventListener("submit", function (e) {
 
 function openModal() {
   let modal = document.getElementsByClassName("modal");
-
   console.log("clicked on button", modal);
 }
